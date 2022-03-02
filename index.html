@@ -11,6 +11,7 @@ git rm --ceched name  取消仓库的文件，git rm -f name 同时删除工作�
 .gitignore 创建忽略规则，符合规则就不会被跟踪及 
 git log 查询最近的提交仓库信息
 git reset --hard 版本标识号 回退到对应版本
+
 （没啥用，用来测试回退版本功能）
 git 有主分支，有其他分支{
     git checkout *name 这是切换分支
@@ -18,4 +19,7 @@ git 有主分支，有其他分支{
     git checkout -b 这是创建并切换分支
     合并分支需要切换到主分支，再合并其他分支
     git marge *name 切换到主分支后合并其他分支
+    git branch -d *name删除分支
+    分支推送到远程仓库，第一次需要 git push -u *仓库name *本地分支name：远程分支*name
+    git remote show 显示远程仓库名称
 }
